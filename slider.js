@@ -11,6 +11,9 @@ function mainSlider() {
     ".main-banner-cases-slider-wrap"
   );
 
+  sliderWrapper.style.transform = "translateX(0px)";
+  nextBtnSlider.style.display = "block";
+
   const sliderCases = document.querySelectorAll(".main-banner-cases-case");
 
   let currentX = 0;
@@ -53,3 +56,9 @@ function mainSlider() {
 }
 
 mainSlider();
+
+function res() {
+  alert("resdddd");
+}
+
+window.addEventListener("resize", mainSlider);
