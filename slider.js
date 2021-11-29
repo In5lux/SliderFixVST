@@ -15,7 +15,9 @@ function mainSlider() {
 
   let currentX = 0;
   let currentCase = 0;
-  const slideWidth = Math.round(sliderWrapper.offsetWidth / sliderCases.length);
+  const slideWidth = sliderCases[0]
+    ? Math.round(sliderCases[0].offsetWidth)
+    : 0;
 
   if (currentCase === 0) {
     prevBtnSlider.style.display = "none";
