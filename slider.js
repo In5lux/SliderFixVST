@@ -55,10 +55,6 @@ function mainSlider() {
   });
 }
 
-mainSlider();
-
-function res() {
-  alert("resdddd");
-}
+mainSlider()
 
 window.addEventListener("resize", mainSlider);
